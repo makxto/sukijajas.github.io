@@ -6,7 +6,7 @@ body{
     padding: 0;
     height: 170vh;
     justify-content: center;
-    background-image: url('../BG.jpg');
+    background-image: url('../z1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -50,9 +50,32 @@ ul li a:hover{
     height: 600px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top:200px;
-    margin-left:300px;
-  }
+    margin-top:120px;
+    margin-left:400px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 2s; /* Firefox < 16 */
+ -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+     animation: fadein 2s;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+  
   
   .slides{
     width: 500%;
@@ -79,9 +102,10 @@ ul li a:hover{
   .navigation-manual{
     position: absolute;
     width: 600px;
-    margin-top: -340px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
+
   }
   
   .manual-btn{
@@ -139,7 +163,7 @@ ul li a:hover{
     display: flex;
     width: 600px;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 700px;
   }
   
   .navigation-auto div{
@@ -175,3 +199,36 @@ ul li a:hover{
   }  #radio7:checked ~ .navigation-auto .auto-btn7{
     background: #40D3DC;
   }
+
+  .snapsss{
+  position: center;
+  text-align: center;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 1.6vw;
+margin-top: 120px;
+margin-right: 120px;
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 2s; /* Firefox < 16 */
+ -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+     animation: fadein 2s;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+  

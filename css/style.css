@@ -189,13 +189,7 @@ left: 350px;
 
 }
 
-p.Sub {
-position: center;
-top: 350px;
-bottom:400px;
-left: 380px;
 
-}
 
 
 h1{
@@ -207,19 +201,48 @@ h1{
 .greeting{
 position: center;
 color:white;
-margin-top:120px;
-
+font-family:Arial, Helvetica, sans-serif;
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 2s; /* Firefox < 16 */
+ -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+     animation: fadein 2s;
 }
 
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+
+
+.tosay{
+  text-align:center;
+} 
+
+
 .clock {
-	width: 100%;
-	position: fixed;
-	font-size: 7vw;
+	width:90%;
+	position: relative;
+	font-size: 6vw;
 	color: whitesmoke;
 	text-align: center;
 	font-family:Arial, Helvetica, sans-serif;
 	margin-right: 50%;
-	margin-top: 16%;
+	margin-top: 14%;
+  margin-left: 4%;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
