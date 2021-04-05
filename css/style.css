@@ -1,14 +1,14 @@
 
 header{
   height:10vh;
-  background-color: #000;
+  background-color: transparent;
 
 
 }
-	
+
 body {
   justify-content: center;
-  background-image: url('../z1.jpg');
+  background-image: url('../z12.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -165,7 +165,7 @@ ul li{
 		display: inline;
 }
 
-ul li a{ 
+ul li a{
 	text-decoration: none;
 	color:#fff;
 	padding: 5px 20px;
@@ -230,7 +230,51 @@ to   { opacity: 1; }
 
 .tosay{
   text-align:center;
-} 
+  margin-bottom: 110px;
+  font-family: Arial;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+.monthversary{
+  text-align:center;
+  margin-top: 120px;
+  font-family: fantasy;
+    animation:blinkingText 1.2s infinite;
+
+}
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    49%{    color: #fff; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #fff;    }
+}
+
 
 
 .clock {
@@ -277,12 +321,12 @@ to   { opacity: 1; }
 
 .typing-demo {
   width: 18ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 2.2s steps(24), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 @keyframes typing {
@@ -290,7 +334,7 @@ to   { opacity: 1; }
     width: 0
   }
 }
-    
+
 @keyframes blink {
   50% {
     border-color: transparent
@@ -300,4 +344,5 @@ to   { opacity: 1; }
 .greetingz {
 font-family: monospace;
 font-size: 20em;
+text-align: center;
 }

@@ -37,7 +37,7 @@ if (hr >= 6 && hr < 12) {
     document.write("Good Noon");
 } else if (hr >= 12 && hr <= 15) {
     document.write("Good Afternoon");
-} else if (hr >= 21 && hr <= 0) {
+} else if (hr >= 21 && hr <= 24) {
     document.write("Good Night");
 } else {
     document.write("Good Evening");
@@ -52,6 +52,3 @@ function $(id,val){
 };
 
 window.onload=init;
-
-
-
