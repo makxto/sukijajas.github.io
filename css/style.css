@@ -180,13 +180,22 @@ ul li a:hover{
 
 
 }
+input[type=text] {
+  position:center;
+  width: 1px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 16px;
+  font-color:white;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
 
-h1.welcome {
-position: center;
-top: 300px;
-bottom:400px;
-left: 350px;
-
+input[type=text]:focus {
+  width: 30%;
 }
 
 
@@ -227,18 +236,6 @@ to   { opacity: 1; }
 }
 
 
-
-.tosay{
-  text-align:center;
-  margin-bottom: 110px;
-  font-family: Arial;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-
-}
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -320,7 +317,7 @@ to   { opacity: 1; }
 }
 
 .typing-demo {
-  width: 18ch;
+  width: 19ch;
   animation: typing 2.2s steps(24), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;

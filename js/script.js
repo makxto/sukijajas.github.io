@@ -39,6 +39,8 @@ if (hr >= 6 && hr < 12) {
     document.write("Good Afternoon");
 } else if (hr >= 21 && hr <= 24) {
     document.write("Good Night");
+  } else if (hr >= 0 && hr <= 6) {
+      document.write("Sleep Well");
 } else {
     document.write("Good Evening");
 }

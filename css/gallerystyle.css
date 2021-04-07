@@ -1,5 +1,7 @@
 header{
 	height:10vh;
+	height:10vh;
+	background-color: transparent
 }
 body{
     margin: 0;
@@ -13,37 +15,39 @@ body{
   }
 
 
-  li {
-    color: transparent;
-    list-style-type: none;
-    white-space: nowrap;
-}
+	li {
+	    color: #888888;
+	    list-style-type: none;
+	    white-space: nowrap;
+	}
 
-ul{
-	float:left;
-	list-style-type: none;
-	margin-top: 25px;
-	margin-left: 75px;
-}
+	ul{
+		float:left;
+		list-style-type: none;
+		margin-top: 25px;
+		margin-left: 75px;
+	    white-space: nowrap;
+	}
 
-ul li{
-		display: inline;
-}
+	ul li{
+			display: inline;
+	}
 
-ul li a{
-	text-decoration: none;
-	color:#ccc;
-	padding: 5px 20px;
-	border: 1px solid #ccc;
-	transition: 0.7s ease;
+	ul li a{
+		text-decoration: none;
+		color:#fff;
+		padding: 5px 20px;
+		border: 1px solid #fff;
+		transition: 0.7s ease;
 
-}
+	}
 
-ul li a:hover{
-	background-color: #ccc;
-	color: #000;
+	ul li a:hover{
+		background-color: #fff;
+		color: #000;
 
-}
+
+	}
 
   .slider{
     width: 600px;
