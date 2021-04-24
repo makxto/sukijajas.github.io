@@ -1,6 +1,7 @@
 
 header{
-  height:10vh;
+  height:5vh;
+  width:5vh;
   background-color: transparent;
 
 
@@ -156,7 +157,6 @@ li {
 ul{
 	float:left;
 	list-style-type: none;
-	margin-top: 25px;
 	margin-left: 75px;
     white-space: nowrap;
 }
@@ -168,9 +168,9 @@ ul li{
 ul li a{
 	text-decoration: none;
 	color:#fff;
-	padding: 5px 20px;
-	border: 1px solid #fff;
-	transition: 0.7s ease;
+	padding: 3px 13px;
+	border: 0.2px solid #fff;
+	transition: 1s ease;
 
 }
 
@@ -187,12 +187,13 @@ input[type=text] {
  border: 0.7px solid #fff;
  border-radius: 2px;
   left: 30%;
+  top:12px;
   width: 10px;
   background-color: white;
   background-image: url('../heart.png');
   background-repeat: no-repeat;
   font-size: 16px;
-  padding: 10px 10px 10px 40px;
+  padding: 5px 5px 5px 60px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
@@ -216,13 +217,6 @@ input[type=text]:focus {
   width: 0px;
 }
 
-
-
-h1{
-	width:90%;
-	margin-top: 100px;
-	margin-left:99px;
-}
 
 .greeting{
 position: center;
@@ -294,12 +288,13 @@ to   { opacity: 1; }
 .clock {
 	width:90%;
 	position: relative;
+  display: block;
 	font-size: 6vw;
 	color: whitesmoke;
 	text-align: center;
 	font-family:Arial, Helvetica, sans-serif;
 	margin-right: 50%;
-	margin-top: 14%;
+	margin-top: 45%;
   margin-left: 4%;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -359,4 +354,29 @@ to   { opacity: 1; }
 font-family: monospace;
 font-size: 20em;
 text-align: center;
+}
+
+@media only screen and (min-width:900px) {
+  ul{
+  	margin-top: 25px;
+  	margin-left: 75px;
+}
+
+  ul li a{
+  	padding: 5px 20px;
+  	border: 1px solid #fff;
+  	transition: 0.7s ease;
+
+  }
+.clock {
+	font-family:Arial, Helvetica, sans-serif;
+	margin-right: 50%;
+	margin-top: 17%;
+  margin-left: 4%;
+
+  }
+}
+
+
+
 }
