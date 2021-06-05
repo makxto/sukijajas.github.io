@@ -167,6 +167,7 @@ to   { opacity: 1; }
     width: 200px;
     justify-content: center;
     margin-top: 700px;
+    display:none;
   }
 
   .navigation-auto div{
@@ -237,7 +238,7 @@ from { opacity: 0; }
 to   { opacity: 1; }
 }
 
-//@media only screen and (min-width:900px) {
+@media only screen and (min-width:768px) {
 
   li {
       color: #888888;
@@ -269,19 +270,48 @@ to   { opacity: 1; }
   	color: #fff;
   }
 
+  .snapsss{
+    font-size: 2vw;
 
 		}
 
 	  .slider{
-
-	    width: 600px;
-	    height: 600px
-	    border-radius: 10px;
-			resize:both;
+	    width: 2000px;
+	    height: 2000px;
+      align-items: center;
+			resize:none;
 	    overflow: hidden;
 	    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: fadein 2s; /* Firefox < 16 */
 	 -ms-animation: fadein 2s; /* Internet Explorer */
 	  -o-animation: fadein 2s; /* Opera < 12.1 */
 	     animation: fadein 2s;
-	}
+      }
+
+      .navigation-auto{
+        position: absolute;
+        display: center;
+        width: 200px;
+        justify-content: center;
+        margin-top: 1900px;
+        display:none;
+      }
+
+      .navigation-manual{
+        position: absolute;
+        width: 200px;
+        margin-top: 500px;
+        margin-left: 400px;
+        display: flex;
+        justify-content: center;
+    
+      }
+
+      .slide img{
+        width: 600px;
+        height: 600px;
+        align-items: center;
+        margin-left: 250px;
+      }
+    
+}
